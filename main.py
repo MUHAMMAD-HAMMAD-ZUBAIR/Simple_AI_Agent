@@ -23,7 +23,8 @@ from agents import (
 # 🔐 Step 2: Load Environment Key
 # ─────────────────────────────
 load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY")  # Can be Gemini or OpenAI
+os.environ["OPENAI_API_KEY"] = API_KEY  # Set for SDK compatibility
 
 # ───────────────────────────────────────────────
 # 🌐 Step 3: Configure Gemini Client and Model
