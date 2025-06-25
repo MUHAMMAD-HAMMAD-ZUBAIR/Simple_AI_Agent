@@ -47,13 +47,13 @@ project/
 ### 1) 🧪 Manual Setup Command (for devs)
 
 ```bash
-git clone https://github.com/MUHAMMAD-HAMMAD-ZUBAIR/Simple_AI_Agent.git && cd Simple_AI_Agent && pip install -r requirements.txt && chainlit run app.py
+git clone https://github.com/MUHAMMAD-HAMMAD-ZUBAIR/Simple_AI_Agent.git && cd Simple_AI_Agent && pip install -r requirements.txt && chainlit run main.py
 ```
 
 ### 2) 🪄 Simple One-Line Setup via NPX
 
 ```bash
-npx chat-with-hammad@latest
+npx simple-agent-hammad@latest
 ```
 
 ---
@@ -84,7 +84,7 @@ GOOGLE_API_KEY=your_real_google_api_key_here
 ### 4. ▶️ Run the Chatbot
 
 ```bash
-chainlit run app/main.py -w
+chainlit run main.py -w
 ```
 
 After that, it will launch in your browser — and your AI buddy HAMMAD BHAI 🤖 will be ready to chat.
