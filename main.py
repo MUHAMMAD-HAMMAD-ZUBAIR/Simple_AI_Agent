@@ -23,14 +23,12 @@ from agents import (
 # 🔐 Step 2: Load Environment Key
 # ─────────────────────────────
 load_dotenv()
-API_KEY = os.getenv("GEMINI_API_KEY")  # Can be Gemini or OpenAI
-os.environ["OPENAI_API_KEY"] = API_KEY  # Set for SDK compatibility
-
+OPENAI_API_KEY = os.getenv("GOOGLE_API_KEY")  # Set this in .env file
 # ───────────────────────────────────────────────
 # 🌐 Step 3: Configure Gemini Client and Model
 # ───────────────────────────────────────────────
 client = AsyncOpenAI(
-    api_key=API_KEY,
+    api_key=OPENAI_API_KEY,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
