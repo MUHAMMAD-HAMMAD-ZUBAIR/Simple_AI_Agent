@@ -1,6 +1,7 @@
-chainlit
+chainlit==1.0.506
 python-dotenv
 langdetect
 openai
-openai-agents
+openai-agents==0.1.15
 deep-translator
+pydantic<2.0.0
