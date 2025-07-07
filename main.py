@@ -23,12 +23,12 @@ from agents import (
 # 🔐 Step 2: Load Environment Key
 # ─────────────────────────────
 load_dotenv()
-OPENAI_API_KEY = os.getenv("GOOGLE_API_KEY")  # Set this in .env file
+GOOGLE_API_KEY= os.getenv("GOOGLE_API_KEY")  # Set this in .env file
 # ───────────────────────────────────────────────
 # 🌐 Step 3: Configure Gemini Client and Model
 # ───────────────────────────────────────────────
 client = AsyncOpenAI(
-    api_key=OPENAI_API_KEY,
+    api_key=GOOGLE_API_KEY,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
@@ -81,7 +81,10 @@ agent = Agent(
 async def start_chat():
     cl.user_session.set("history", [])
     await cl.Message(
-        content="👋 Assalamualaikum! Main HAMMAD BHAI hoon. Kaise madad karoon?"
+        content=  "👋 **As-Salaam-u-Alaikum!**\n"
+            "Main hoon **HAMMAD BHAI 🤖** — tumhara smart AI dost, banaya gaya 💡 "
+            "*MUHAMMAD HAMMAD ZUBAIR* ke zariye.\n\n"
+            "Kuch bhi poochho, main hamesha hoon tumhari madad ke liye 🫶"
     ).send()
 
 # 💬 On Message: Handle user input
