@@ -1,6 +1,6 @@
-chainlit>=1.7.0
-python-dotenv>=1.0.0
-langdetect>=1.0.9
-openai>=1.3.7
-openai-agents>=0.1.2  # Adjust if you know the latest working version
+chainlit
+python-dotenv
+langdetect
+openai
+openai-agents
 deep-translator
